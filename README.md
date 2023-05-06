@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Generate colorful 3D box mesh PNG images using React Three Fiber.\
-![Sample Image](./sample-image.png)
+![Sample Image](./screenshot.png)
+![Sample Image](./screenshot2.png)
 
 This project is a small React application that generates colorful 3D box mesh PNG images, utilizing the React Three Fiber library for rendering 3D objects. Users can interactively customize the box mesh instances, adjusting colors and sizes to create visually appealing images.
 
