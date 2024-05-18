@@ -1,6 +1,6 @@
 import React from "react";
-import { LayerMaterial, Depth, Color, Noise } from "lamina";
 import { Environment, Sphere } from "@react-three/drei";
+import { Color, Depth, LayerMaterial, Noise } from "lamina";
 import * as THREE from "three";
 
 const Background: React.FC = () => {

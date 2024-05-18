@@ -1,6 +1,6 @@
-import React, { forwardRef, useLayoutEffect, useMemo, useRef } from "react";
-import * as THREE from "three";
+import { forwardRef, useLayoutEffect, useMemo, useRef } from "react";
 import niceColors from "nice-color-palettes";
+import * as THREE from "three";
 
 const tempColor = new THREE.Color();
 const dummy = new THREE.Object3D();
@@ -11,9 +11,9 @@ type MatrixGeneratorProps = {
   gap: number;
   pattern: number;
   opacity: number;
-} & Omit<JSX.IntrinsicElements["group"], "args">;
+};
 
-const MatrixGenerator: React.FC<MatrixGeneratorProps> = forwardRef(
+const MatrixGenerator = forwardRef<THREE.Group, MatrixGeneratorProps>(
   ({ size = 3, side = 1, gap = 0.1, pattern = 0, opacity = 1 }, ref) => {
     const instance = useRef<THREE.InstancedMesh>(null);
     const count = Math.pow(size, 3);
@@ -23,8 +23,8 @@ const MatrixGenerator: React.FC<MatrixGeneratorProps> = forwardRef(
     }, [size, side, gap]);
 
     const colorArray = useMemo<Float32Array>(() => {
-      //if 4x4x4 cube, we need 64 nos. colors
-      //generate an array with random colors, array length equal to count
+      // If 4x4x4 cube, we need 64 nos. colors
+      // Generate an array with random colors, array length equal to count
       const data: {
         color: string;
       }[] = Array.from({ length: count }, () => ({

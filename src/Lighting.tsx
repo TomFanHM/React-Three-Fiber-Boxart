@@ -1,5 +1,5 @@
-import { useControls } from "leva";
 import React from "react";
+import { useControls } from "leva";
 import * as THREE from "three";
 
 const positions = [

@@ -1,12 +1,15 @@
-import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+
 import "./App.css";
+
 import { Html, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { PacmanLoader } from "react-spinners";
-import Matrix from "./Matrix";
+
 import Background from "./Background";
-import Screenshot from "./Screenshot";
 import Lighting from "./Lighting";
+import Matrix from "./Matrix";
+import Screenshot from "./Screenshot";
 
 function App() {
   return (

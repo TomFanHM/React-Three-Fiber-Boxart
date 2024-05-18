@@ -1,7 +1,8 @@
-import { useControls } from "leva";
 import React, { useRef } from "react";
-import MatrixGenerator from "./MatrixGenerator";
 import { useFrame } from "@react-three/fiber";
+import { useControls } from "leva";
+
+import MatrixGenerator from "./MatrixGenerator";
 
 const Matrix: React.FC = () => {
   const { color, size, gap, side_length, opacity, rotate } = useControls(

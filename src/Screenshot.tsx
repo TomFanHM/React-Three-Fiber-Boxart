@@ -1,6 +1,6 @@
-import { useThree } from "@react-three/fiber";
-import { useControls, button } from "leva";
 import React from "react";
+import { useThree } from "@react-three/fiber";
+import { button, useControls } from "leva";
 
 const Screenshot: React.FC = () => {
   const gl = useThree((state) => state.gl);

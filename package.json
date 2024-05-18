@@ -9,6 +9,14 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "description": "This project is a small React application that generates colorful 3D box mesh PNG images, utilizing the React Three Fiber library for rendering 3D objects. Users can interactively customize the box mesh instances, adjusting colors and sizes to create visually appealing images.",
+  "keywords": [
+    "react",
+    "threejs",
+    "vite",
+    "react-three-fiber",
+    "react-three-drei"
+  ],
   "dependencies": {
     "@react-three/drei": "^9.66.3",
     "@react-three/fiber": "^8.13.0",
@@ -23,6 +31,7 @@
     "three": "^0.151.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
